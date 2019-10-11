@@ -56,18 +56,25 @@ provider:
 
 functions:
   metrics-list:
-    handler: src/metrics.list
+    handler: src/metrics/list.list
     events:
      - http:
          path: metrics
          method: get
 
   metrics-create:
-    handler: src/metrics.create
+    handler: src/metrics/create.create
     events:
      - http:
          path: metrics
          method: post
+  
+  metrics-set:
+    handler: src/metrics/set.set
+    events:
+     - http:
+         path: metrics/{id}
+         method: put
 
 
 # you can add CloudFormation resource templates here

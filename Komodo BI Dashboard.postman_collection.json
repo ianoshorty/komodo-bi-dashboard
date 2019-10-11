@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "9861eadf-c186-439a-8e02-972f89ff2b4f",
+		"name": "Komodo BI Dashboard",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ui3v5kzpm0.execute-api.eu-west-1.amazonaws.com/dev/metrics",
+					"protocol": "https",
+					"host": [
+						"ui3v5kzpm0",
+						"execute-api",
+						"eu-west-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"metrics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"label\": \"milk\"\n}"
+				},
+				"url": {
+					"raw": "https://ui3v5kzpm0.execute-api.eu-west-1.amazonaws.com/dev/metrics",
+					"protocol": "https",
+					"host": [
+						"ui3v5kzpm0",
+						"execute-api",
+						"eu-west-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"metrics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"count\": 0\n}"
+				},
+				"url": {
+					"raw": "https://ui3v5kzpm0.execute-api.eu-west-1.amazonaws.com/dev/metrics/",
+					"protocol": "https",
+					"host": [
+						"ui3v5kzpm0",
+						"execute-api",
+						"eu-west-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"metrics",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
