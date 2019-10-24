@@ -81,7 +81,7 @@ plugins:
 
 custom:
   webpack:
-    packager: 'yarn'
+    includeModules: true
 
 # you can add CloudFormation resource templates here
 resources:

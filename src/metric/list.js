@@ -2,7 +2,7 @@ const AWS = require('aws-sdk');
 
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
-module.exports.list = (event, context, callback) => {
+export default (event, context, callback) => {
   const params = {
     TableName: process.env.DYNAMODB_TABLE
   };

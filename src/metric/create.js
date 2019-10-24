@@ -3,7 +3,7 @@ const uuid = require('uuid');
 
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
-module.exports.create = (event, context, callback) => {
+export default (event, context, callback) => {
   const data = JSON.parse(event.body);
   const timestamp = new Date().getTime();
 

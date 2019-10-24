@@ -1,11 +1,7 @@
-import Create from './create';
-import List from './list';
-import Set from './set';
-import DummySum from './increase';
+import create from './create';
+import list from './list';
+import set from './set';
 
-export default {
-  Create,
-  List,
-  Set,
-  DummySum
-};
+export const Create = create;
+export const List = list;
+export const Set = set;
