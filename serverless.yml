@@ -56,26 +56,32 @@ provider:
 
 functions:
   metrics-list:
-    handler: src/metrics/list.list
+    handler: src/routes/metrics.list
     events:
      - http:
          path: metrics
          method: get
 
   metrics-create:
-    handler: src/metrics/create.create
+    handler: src/routes/metrics.create
     events:
      - http:
          path: metrics
          method: post
   
   metrics-set:
-    handler: src/metrics/set.set
+    handler: src/routes/metrics.set
     events:
      - http:
          path: metrics/{id}
          method: put
 
+plugins:
+  - serverless-webpack
+
+custom:
+  webpack:
+    packager: 'yarn'
 
 # you can add CloudFormation resource templates here
 resources:
