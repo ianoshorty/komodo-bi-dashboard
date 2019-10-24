@@ -1,6 +1,6 @@
 {
   "name": "komodo-bi-dashboard",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Serverless Node application to have metrics",
   "author": "Ian Outterside <ian@komododigital.co.uk>",
   "license": "MIT",
