@@ -1,5 +1,5 @@
-const AWS = require("aws-sdk"); // eslint-disable-line import/no-extraneous-dependencies
-const uuid = require("uuid"); // eslint-disable-line import/no-extraneous-dependencies
+const AWS = require('aws-sdk');
+const uuid = require('uuid');
 
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
@@ -7,12 +7,12 @@ module.exports.create = (event, context, callback) => {
   const data = JSON.parse(event.body);
   const timestamp = new Date().getTime();
 
-  if (typeof data.label !== "string") {
-    console.error("Validation Failed");
+  if (typeof data.label !== 'string') {
+    console.error('Validation Failed');
 
     callback(null, {
       statusCode: 400,
-      headers: { "Content-Type": "text/plain" },
+      headers: { 'Content-Type': 'text/plain' },
       body: "Couldn't create the metric item."
     });
 
@@ -37,7 +37,7 @@ module.exports.create = (event, context, callback) => {
       console.error(error);
       callback(null, {
         statusCode: error.statusCode || 501,
-        headers: { "Content-Type": "text/plain" },
+        headers: { 'Content-Type': 'text/plain' },
         body: "Couldn't create the metric item."
       });
       return;
