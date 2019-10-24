@@ -1,4 +1,4 @@
-# Business Intelligence Dashboard &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ianoshorty/komodo-bi-dashboard/blob/master/LICENSE)[![Maintainability](https://api.codeclimate.com/v1/badges/7fca32b82a21195b29d6/maintainability)](https://codeclimate.com/github/ianoshorty/komodo-bi-dashboard/maintainability)[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]
+# Business Intelligence Dashboard &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ianoshorty/komodo-bi-dashboard/blob/master/LICENSE) [![Maintainability](https://api.codeclimate.com/v1/badges/7fca32b82a21195b29d6/maintainability)](https://codeclimate.com/github/ianoshorty/komodo-bi-dashboard/maintainability) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 This project is aimed at demonstrating how you can create a BI dashboard using Node, AWS and the Serverless framework.
 
