@@ -17,6 +17,8 @@ Full installation instructions for the project are deteailed in `docs/lesson-1.m
 
  - `npm install`
 
+Included is a postman collection to allow you to query the deployed API on AWS. To use it, make sure to update the URL based upon what `serverless deploy` tells you!
+
 # CI
 
 // @todo
