@@ -1,7 +1,9 @@
-import create from './create';
-import list from './list';
-import set from './set';
+import dynamoose, { Schema } from 'dynamoose';
 
-export const Create = create;
-export const List = list;
-export const Set = set;
+const metric = new Schema({
+  label: {
+    type: String,
+    
+  }
+})
+

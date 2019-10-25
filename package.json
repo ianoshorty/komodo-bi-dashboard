@@ -10,6 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "dynamoose": "^1.11.1",
     "uuid": "^3.3.3"
   },
   "devDependencies": {
